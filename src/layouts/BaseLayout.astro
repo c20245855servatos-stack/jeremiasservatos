@@ -17,9 +17,15 @@ const position = "Web Developer / 	Software Engineer";
 		<meta name="generator" content={Astro.generator} />
 		<title> {name} | {position} </title>
 	</head>
-	<body>
-        <Header />
+	<body class="min-h-screen bg-sky-100 font-mono text-blue-950 transition-colors dark:bg-blue-950 dark:text-white">
+        <main class="mx-auto grid max-w-5xl gap-10 px-6 py-12">
+		
+		<Header />
         <slot />
         <Footer />	
+		<script>
+		import "../scripts/animations.js";
+		</script>
+		</main>
 	</body>
 </html>
