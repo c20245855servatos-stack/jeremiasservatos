@@ -18,7 +18,10 @@ const position = "Web Developer / 	Software Engineer";
 		<title> {name} | {position} </title>
 	</head>
 	<body class="min-h-screen bg-sky-100 font-mono text-blue-950 transition-colors dark:bg-blue-950 dark:text-white">
-        <main class="mx-auto grid max-w-5xl gap-10 px-6 py-12">
+       
+	 
+	
+		<main class="mx-auto grid max-w-5xl gap-10 px-6 py-12">
 		
 		<Header />
         <slot />
@@ -26,6 +29,12 @@ const position = "Web Developer / 	Software Engineer";
 		<script>
 		import "../scripts/animations.js";
 		</script>
+		<script>
+            import { FallingLeaves } from "falling-leaves";
+
+            new FallingLeaves({ shapes: ["maple", "oak", "ginkgo", "birch", "oval"] });
+        </script>
 		</main>
+		
 	</body>
 </html>
